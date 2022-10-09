@@ -1,0 +1,32 @@
+.image{
+    float:right;
+    width: 300px;
+}
+.text1{
+    float:left;
+    width: 500px;
+}
+.clear{
+    clear:both;
+}
+.text2{
+    display: inline-block
+}
+.text2::before{
+    content: 'geolab';
+    display: inline-block;
+    
+}
+.text2::after{
+     content:'';
+     width:2px;
+     height: 20px;
+     background-color: red;
+     display:inline-block;
+     margin: 0 10px;
+}
+.wraper::after{
+    content:'';
+    clear:both;
+    display:block;
+}
